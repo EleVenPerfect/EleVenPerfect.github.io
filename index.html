@@ -1,0 +1,1237 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="ATIME">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="">
+  
+  
+  
+  <title>ATIME</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"atime.cc","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":75,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":10},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>ATIME</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/start.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="Your internal mediocrity is the moment when you lost the faith of being excellent."></span>
+          
+        </div>
+
+        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          style="margin-top: 0">
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2019/01/14/%E6%89%92%E4%B8%80%E6%89%92%E9%82%A3%E4%BA%9B%E8%AF%88%E9%AA%97%E9%82%AE%E4%BB%B6%E5%A5%97%E8%B7%AF/" target="_self">
+          扒一扒那些诈骗邮件套路
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2019/01/14/%E6%89%92%E4%B8%80%E6%89%92%E9%82%A3%E4%BA%9B%E8%AF%88%E9%AA%97%E9%82%AE%E4%BB%B6%E5%A5%97%E8%B7%AF/" target="_self">
+        <div>
+          好久没更新啦，最近发生件很有意思的事，分享给大家~ 发生了什么呢？直接看图片吧~  啥？我居然中病毒了？ 收到这个我表示，说的好吓人啊，but，你逗我呢么？然而又一想，为啥他居然知道我密码呢？好像确实有病毒？本来想着算了，反正知道是骗子就不理他就行了，结果这家伙貌似发邮件根本停不下来啊，所以让我来彻底查一查 首先，邮件里说我反查不到他是谁？有着建站经验的我，当然要先查查邮件发件域名是谁的~ 直接到
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2019-01-14 08:00" pubdate>
+              2019-01-14
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/web/" class="category-chain-item">web</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE/">#网站建设</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2018/10/10/atime-%E4%BA%94%E5%B9%B4/" target="_self">
+          ATIME 五年
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2018/10/10/atime-%E4%BA%94%E5%B9%B4/" target="_self">
+        <div>
+          ATIME 这个词已经伴随我整整五年了，回想那么多人出现在人生轨迹里，回看那时候还不够成熟、还在耍小脾气的我，不得不谢谢陪伴我的人，能容忍我那么胡闹。 读研让我看到更多有趣的人，有意思的事，也让我更加看清自己，期待自己能创造属于自己的神话。 ATIME，专注创造奇迹！ By ATIME 20181011
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2018-10-10 08:00" pubdate>
+              2018-10-10
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/programming/" class="category-chain-item">programming</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/atime/">#atime</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2018/06/09/%E9%80%9A%E8%BF%87ifttt-rss%E5%AE%9E%E7%8E%B0%E7%BD%91%E7%AB%99%E9%80%9A%E7%9F%A5%E5%8D%B3%E5%88%BB%E8%8E%B7%E5%8F%96/" target="_self">
+          通过ifttt/rss实现网站通知即刻获取
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2018/06/09/%E9%80%9A%E8%BF%87ifttt-rss%E5%AE%9E%E7%8E%B0%E7%BD%91%E7%AB%99%E9%80%9A%E7%9F%A5%E5%8D%B3%E5%88%BB%E8%8E%B7%E5%8F%96/" target="_self">
+        <div>
+          一、问题阐述官方通知总是悄悄在官网更新？工作太忙没时间天天关注官网？工作中忘乎所以错过通知时间？我们需要一个高效可靠的网站更新通知。 当网站内容发生变换时，我么想要第一时间知道内容更新，我们需要一套可靠的网站通知工具，而目前还没有一个轻量化的解决方案。 本文利用ifttt和rss技术解决这一问题。 二、什么是iftttifttt是“if this then that”的缩写，事实上是让你的网络行为
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2018-06-09 08:00" pubdate>
+              2018-06-09
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/crawler/" class="category-chain-item">crawler</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/crawler/web/" class="category-chain-item">web</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/crawler/web/essayist/" class="category-chain-item">essayist</a>
+  
+  
+
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/feed43/">#feed43</a>
+            
+              <a href="/tags/ifttt/">#ifttt</a>
+            
+              <a href="/tags/rss/">#rss</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2018/06/07/wordpress%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E5%BE%AE%E5%8D%9A%E5%8A%A8%E6%80%81/" target="_self">
+          Wordpress博客添加微博动态
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2018/06/07/wordpress%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E5%BE%AE%E5%8D%9A%E5%8A%A8%E6%80%81/" target="_self">
+        <div>
+          首先去微博官方网站申请微博挂件地址： http://app.weibo.com/tool/blogwidget 如图所示：  可以选择HTML版，点击进入：  复制文本框内的全部代码 然后进入wordpress管理后台进入外观-小工具，找到自定义HTML，拖动到侧边栏工具  将代码粘贴到内容框内，如上图所示，保存后回到网站前台即可看到侧边栏微博微博。
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2018-06-07 08:00" pubdate>
+              2018-06-07
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/web/" class="category-chain-item">web</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/wordpress/">#wordpress</a>
+            
+              <a href="/tags/%E5%BE%AE%E5%8D%9A/">#微博</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2018/04/07/illenium-needed-you/" target="_self">
+          Illenium - Needed You
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2018/04/07/illenium-needed-you/" target="_self">
+        <div>
+          [music]507585222[&#x2F;music] I could count them if I want to 如果你想 我可以为你细数 All these years I’ve wasted on you 我曾在你身上浪费的光阴无数 You gave up, I-I grew up 你将爱抛弃 我得到了教训 Oh, I can’t help, but wonder 但我还是 不住好奇
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2018-04-07 08:00" pubdate>
+              2018-04-07
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/essayist/" class="category-chain-item">essayist</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2018/03/17/%E5%BE%B7%E5%8F%A4%E6%8B%89%E5%85%83%E5%B9%B4-%E6%91%98%E6%8A%84/" target="_self">
+          德古拉元年 - 摘抄
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2018/03/17/%E5%BE%B7%E5%8F%A4%E6%8B%89%E5%85%83%E5%B9%B4-%E6%91%98%E6%8A%84/" target="_self">
+        <div>
+          “Why think separately of this life than the next, when one is born from the last? Time is always too short for those who need it, but for those who love, it lasts forever.” 当我们能够再续前缘，又为何认定来世并非今生。 时间对需
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2018-03-17 08:00" pubdate>
+              2018-03-17
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/essayist/" class="category-chain-item">essayist</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2018/02/15/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%8A%80%E6%9C%AF%E7%BB%83%E7%BA%A7%E6%94%BB%E7%95%A5%E8%BD%AC%E8%BD%BD/" target="_self">
+          程序员技术练级攻略(转载)
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2018/02/15/%E7%A8%8B%E5%BA%8F%E5%91%98%E6%8A%80%E6%9C%AF%E7%BB%83%E7%BA%A7%E6%94%BB%E7%95%A5%E8%BD%AC%E8%BD%BD/" target="_self">
+        <div>
+          月光博客6月12日发表了《写给新手程序员的一封信》，翻译自《An open letter to those who want to start programming》，我的朋友（他在本站的id是Mailper）告诉我，他希望在酷壳上看到一篇更具操作性的文章。因为他也是喜欢编程和技术的家伙，于是，我让他把他的一些学习Python和Web编程的一些点滴总结一下。于是他给我发来了一些他的心得和经历，我
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2018-02-15 08:00" pubdate>
+              2018-02-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/51mcu/" class="category-chain-item">51mcu</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/51mcu/c/" class="category-chain-item">c</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/51mcu/c/msp430/" class="category-chain-item">msp430</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/51mcu/c/msp430/mcu/" class="category-chain-item">mcu</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/51mcu/c/msp430/mcu/start/" class="category-chain-item">start</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/51mcu/c/msp430/mcu/start/embed/" class="category-chain-item">embed</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/51mcu/c/msp430/mcu/start/embed/bootloader/" class="category-chain-item">bootloader</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/51mcu/c/msp430/mcu/start/embed/bootloader/os/" class="category-chain-item">os</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/51mcu/c/msp430/mcu/start/embed/bootloader/os/crawler/" class="category-chain-item">crawler</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/51mcu/c/msp430/mcu/start/embed/bootloader/os/crawler/programming/" class="category-chain-item">programming</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/51mcu/c/msp430/mcu/start/embed/bootloader/os/crawler/programming/web/" class="category-chain-item">web</a>
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%B5%8C%E5%85%A5%E5%BC%8F/">#嵌入式</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2018/02/11/%E4%BD%8D%E8%BF%90%E7%AE%97%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E7%9F%A5%E8%AF%86%E5%B0%8F%E7%BB%93/" target="_self">
+          位运算基本操作知识小结
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2018/02/11/%E4%BD%8D%E8%BF%90%E7%AE%97%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E7%9F%A5%E8%AF%86%E5%B0%8F%E7%BB%93/" target="_self">
+        <div>
+          1.左移操作a&lt;&lt;b将A的二进制表示的每一位向左移B位，左边超出的位截掉，右边不足的位补0 A &#x3D; 1100 B &#x3D; 2 A &lt;&lt; B &#x3D; 110000 2.右移操作A&gt;&gt; B , 右移操作分为算数右移和逻辑右移 算术右移是带符号的右移，逻辑右移是不带符号的右移。 算术右移：将A的二进制表示的每一位向右移B位，右边超出的位截掉，左边
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2018-02-11 08:00" pubdate>
+              2018-02-11
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/51mcu/" class="category-chain-item">51mcu</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/51mcu/msp430/" class="category-chain-item">msp430</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/51mcu/msp430/mcu/" class="category-chain-item">mcu</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/51mcu/msp430/mcu/embed/" class="category-chain-item">embed</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/51mcu/msp430/mcu/embed/programming/" class="category-chain-item">programming</a>
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/c%E8%AF%AD%E8%A8%80/">#c语言</a>
+            
+              <a href="/tags/%E4%BD%8D%E6%93%8D%E4%BD%9C/">#位操作</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2018/02/10/centos7-%E5%AE%89%E8%A3%85python3/" target="_self">
+          CentOS 7 安装python3
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2018/02/10/centos7-%E5%AE%89%E8%A3%85python3/" target="_self">
+        <div>
+          1.查看当前python版本首先使用 python -V 命令查看一下是否安装Python which python 查看一下Python可执行文件的位置 2.安装python首先安装依赖包 yum -y groupinstall “Development tools” 3.下载pythonwget https://www.python.org/ftp/python/3.6.2/Python-3.
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2018-02-10 08:00" pubdate>
+              2018-02-10
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/crawler/" class="category-chain-item">crawler</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/crawler/programming/" class="category-chain-item">programming</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/crawler/programming/web/" class="category-chain-item">web</a>
+  
+  
+
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/centos/">#centos</a>
+            
+              <a href="/tags/python/">#python</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2018/02/09/python2%E5%92%8Cpython3%E9%99%A4%E6%B3%95%E5%8C%BA%E5%88%AB/" target="_self">
+          python2和python3除法区别
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2018/02/09/python2%E5%92%8Cpython3%E9%99%A4%E6%B3%95%E5%8C%BA%E5%88%AB/" target="_self">
+        <div>
+          在Python2中，除法的取值结果取整数 如9&#x2F;2&#x3D;4 而在Python3中，除法&#x2F;的结果包含小数，如果只想取整数需要使用&#x2F;&#x2F;运算符 而如果直接计算9&#x2F;2&#x3D;4.5 需要计算 9&#x2F;&#x2F;2&#x3D;4 如果在python2中需要实现与python3相同功能的除法，需要导入模块 123456atime@atime:
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2018-02-09 08:00" pubdate>
+              2018-02-09
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/crawler/" class="category-chain-item">crawler</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/crawler/programming/" class="category-chain-item">programming</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/python/">#python</a>
+            
+              <a href="/tags/%E9%99%A4%E6%B3%95/">#除法</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2018/02/08/python%E7%88%AC%E8%99%AB%E8%B5%B0%E8%BF%9B%E7%BD%91%E6%98%93%E7%83%AD%E8%AF%84/" target="_self">
+          Python爬虫走进网易热评
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2018/02/08/python%E7%88%AC%E8%99%AB%E8%B5%B0%E8%BF%9B%E7%BD%91%E6%98%93%E7%83%AD%E8%AF%84/" target="_self">
+        <div>
+          理论分析主要工作：获取网页中的歌曲信息，并将对应的歌曲热门评论数据保存下来。因此主要需要如下信息：歌曲名称、歌手名称、评论信息。获取到这些信息后需要存储数据。 根据这些需求分析，首先需要一个网络请求库，这里采用requests库来完成。获取到的数据html文档、json文档两种格式，如图1图2所示。对于处理html文档可以使用正则表达式来处理，对于json数据可以由Python自带的json库处理
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2018-02-08 08:00" pubdate>
+              2018-02-08
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/51mcu/" class="category-chain-item">51mcu</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/51mcu/msp430/" class="category-chain-item">msp430</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/51mcu/msp430/mcu/" class="category-chain-item">mcu</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/51mcu/msp430/mcu/crawler/" class="category-chain-item">crawler</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/51mcu/msp430/mcu/crawler/programming/" class="category-chain-item">programming</a>
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/python/">#python</a>
+            
+              <a href="/tags/%E7%88%AC%E8%99%AB/">#爬虫</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/2018/02/08/wordpress-%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84/" target="_self">
+          WordPress 文件结构
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2018/02/08/wordpress-%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84/" target="_self">
+        <div>
+          根目录 |-wp-admin | |-css | |-images | |-includes | |-js | |-maint | |-network | |-user |-wp-content | |-languages | |-plugins | |-themes | |-upgrade |-wp-includes | |-certificates | |-css | |-fonts | |-
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2018-02-08 08:00" pubdate>
+              2018-02-08
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/programming/" class="category-chain-item">programming</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/programming/web/" class="category-chain-item">web</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/wordpress/">#wordpress</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/#board">2</a><a class="page-number" href="/page/3/#board">3</a><a class="page-number" href="/page/4/#board">4</a><a class="extend next" rel="next" href="/page/2/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <p>Copyright 2014-2023<a target="_blank" rel="noopener" href="http://www.atime.cc">@ATIME</a>. All Rights Reserved.<br> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
