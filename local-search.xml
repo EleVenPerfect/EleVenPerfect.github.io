@@ -546,9 +546,9 @@
     
     <tags>
       
-      <tag>嵌入式</tag>
-      
       <tag>main</tag>
+      
+      <tag>嵌入式</tag>
       
       <tag>底层函数</tag>
       
@@ -845,9 +845,42 @@
     
     <tags>
       
+      <tag>嵌入式</tag>
+      
       <tag>arm</tag>
       
-      <tag>嵌入式</tag>
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>交叉编译环境安装(下)环境配置</title>
+    <link href="/2017/01/28/%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E4%B8%8B%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    <url>/2017/01/28/%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E4%B8%8B%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</url>
+    
+    <content type="html"><![CDATA[<h2 id="1-登陆系统"><a href="#1-登陆系统" class="headerlink" title="1.登陆系统"></a>1.登陆系统</h2><p>登录Linux系统，并输入”sudo -i”获取管理员权限。如图所示。</p><p><img src="/images/1c35bdf8ca2167d9de84941b8a63f647.png"></p><h2 id="2复制开发工具包"><a href="#2复制开发工具包" class="headerlink" title="2复制开发工具包"></a>2复制开发工具包</h2><p>将开发工具包使用文件共享，传到Linux中。如图所示：</p><p><img src="/images/cdfd8db7deab4e20540c1ac19a73f2e3.png"></p><h2 id="3-解压压缩包"><a href="#3-解压压缩包" class="headerlink" title="3.解压压缩包"></a>3.解压压缩包</h2><p>将当前目录切换到&#x2F;opt：”cd &#x2F;opt”</p><p>输入：”tar vxjf &#x2F;home&#x2F;atime&#x2F;EABI-4.3.3_EmbedSky_20100610.tar.bz2 -C &#x2F;”回车后效果如图所示：</p><p><img src="/images/d476828758ebf12085b273f406707093.png"></p><h2 id="4-修改系统环境变量"><a href="#4-修改系统环境变量" class="headerlink" title="4.修改系统环境变量"></a>4.修改系统环境变量</h2><p>移动到&#x2F;etc目录下：”cd &#x2F;etc”</p><p>使用vi编辑environment文件：”vi environment”</p><p>在PATH 末尾引号之前添加：”:&#x2F;opt&#x2F;EmbedSky&#x2F;4.3.3&#x2F;bin”</p><p>完成后保存退出按Esc输入：”:wq”</p><p>如图所示：</p><p><img src="/images/a2c198c0a69d0d909370a6a836e90c94.png"></p><h2 id="5-注意"><a href="#5-注意" class="headerlink" title="5.注意"></a>5.注意</h2><p>此时可重启虚拟机登录测试：”arm-linux-gcc -v”</p><p>若出现exec arm-none-linux-gnueabi-gcc:not found</p><p>表示没有安装lsb-core，解决办法如下：</p><p>输出：”sudo apt-get install lsb-core”</p><p><img src="/images/92869fc68719af000810cd1675f0be94.png"></p><h2 id="6-测试gcc"><a href="#6-测试gcc" class="headerlink" title="6.测试gcc"></a>6.测试gcc</h2><p>在次重启虚拟机登录测试：”arm-linux-gcc -v”</p><p>注意，不要以root用户运行</p><p>出现如下显示，即为正确安装配置：</p><p><img src="/images/5e65c563a08ea0935cd247f24d8a2964.png"></p><h2 id="7-测试yaffs"><a href="#7-测试yaffs" class="headerlink" title="7.测试yaffs"></a>7.测试yaffs</h2><p>输入mkyaffs后连续按两次Tab键，出现如下则表示安装正确：</p><p><img src="/images/7e8c9a5b809b62dbe24ac1539aa50b96.png"></p><p>Linux操作系统下的交叉编译环境到这里就已经配置完成了。下一步还需要准备windows下的源代码浏览软件、J-Link烧录程序等的安装。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>start</category>
+      
+      <category>embed</category>
+      
+      <category>bootloader</category>
+      
+      <category>os</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>linux</tag>
+      
+      <tag>环境配置</tag>
       
     </tags>
     
@@ -885,39 +918,6 @@
       <tag>sanba</tag>
       
       <tag>交叉编译环境</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>交叉编译环境安装(下)环境配置</title>
-    <link href="/2017/01/28/%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E4%B8%8B%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
-    <url>/2017/01/28/%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E4%B8%8B%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</url>
-    
-    <content type="html"><![CDATA[<h2 id="1-登陆系统"><a href="#1-登陆系统" class="headerlink" title="1.登陆系统"></a>1.登陆系统</h2><p>登录Linux系统，并输入”sudo -i”获取管理员权限。如图所示。</p><p><img src="/images/1c35bdf8ca2167d9de84941b8a63f647.png"></p><h2 id="2复制开发工具包"><a href="#2复制开发工具包" class="headerlink" title="2复制开发工具包"></a>2复制开发工具包</h2><p>将开发工具包使用文件共享，传到Linux中。如图所示：</p><p><img src="/images/cdfd8db7deab4e20540c1ac19a73f2e3.png"></p><h2 id="3-解压压缩包"><a href="#3-解压压缩包" class="headerlink" title="3.解压压缩包"></a>3.解压压缩包</h2><p>将当前目录切换到&#x2F;opt：”cd &#x2F;opt”</p><p>输入：”tar vxjf &#x2F;home&#x2F;atime&#x2F;EABI-4.3.3_EmbedSky_20100610.tar.bz2 -C &#x2F;”回车后效果如图所示：</p><p><img src="/images/d476828758ebf12085b273f406707093.png"></p><h2 id="4-修改系统环境变量"><a href="#4-修改系统环境变量" class="headerlink" title="4.修改系统环境变量"></a>4.修改系统环境变量</h2><p>移动到&#x2F;etc目录下：”cd &#x2F;etc”</p><p>使用vi编辑environment文件：”vi environment”</p><p>在PATH 末尾引号之前添加：”:&#x2F;opt&#x2F;EmbedSky&#x2F;4.3.3&#x2F;bin”</p><p>完成后保存退出按Esc输入：”:wq”</p><p>如图所示：</p><p><img src="/images/a2c198c0a69d0d909370a6a836e90c94.png"></p><h2 id="5-注意"><a href="#5-注意" class="headerlink" title="5.注意"></a>5.注意</h2><p>此时可重启虚拟机登录测试：”arm-linux-gcc -v”</p><p>若出现exec arm-none-linux-gnueabi-gcc:not found</p><p>表示没有安装lsb-core，解决办法如下：</p><p>输出：”sudo apt-get install lsb-core”</p><p><img src="/images/92869fc68719af000810cd1675f0be94.png"></p><h2 id="6-测试gcc"><a href="#6-测试gcc" class="headerlink" title="6.测试gcc"></a>6.测试gcc</h2><p>在次重启虚拟机登录测试：”arm-linux-gcc -v”</p><p>注意，不要以root用户运行</p><p>出现如下显示，即为正确安装配置：</p><p><img src="/images/5e65c563a08ea0935cd247f24d8a2964.png"></p><h2 id="7-测试yaffs"><a href="#7-测试yaffs" class="headerlink" title="7.测试yaffs"></a>7.测试yaffs</h2><p>输入mkyaffs后连续按两次Tab键，出现如下则表示安装正确：</p><p><img src="/images/7e8c9a5b809b62dbe24ac1539aa50b96.png"></p><p>Linux操作系统下的交叉编译环境到这里就已经配置完成了。下一步还需要准备windows下的源代码浏览软件、J-Link烧录程序等的安装。</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>start</category>
-      
-      <category>embed</category>
-      
-      <category>bootloader</category>
-      
-      <category>os</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>linux</tag>
-      
-      <tag>环境配置</tag>
       
     </tags>
     
