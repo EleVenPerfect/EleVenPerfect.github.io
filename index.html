@@ -1241,24 +1241,18 @@
        <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
     <i class="iconfont icon-love"></i>
     <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
-    <div>Copyright 2014-<div id="year"></div><a href="http://www.atime.cc">@ATIME</a>. All Rights Reserved.<br></div>
+    <div id = "year_info">Copyright 2014-2077<a href="http://www.atime.cc">@ATIME</a>. All Rights Reserved.<br></div>
     <script type="text/javascript">
         function displayYear() {
             var currentDate = new Date(); // 创建日期对象
             var year = currentDate.getFullYear(); // 获取完整的年份（四位数）
-            document.getElementById("year").innerHTML = year; // 将年份显示到指定元素上
+            document.getElementById("year_info").innerHTML = "Copyright 2014-" + year + "<a href='http://www.atime.cc">@ATIME</a>. All Rights Reserved."; // 更新年份并显示在指定元素上
         }
         
         window.onload = displayYear; // 页面加载时调用函数
     </script>
+    </div>  
     </div>
-
-  
-  
-  
-  
-</div>
-
   </footer>
 
   <!-- Scripts -->
